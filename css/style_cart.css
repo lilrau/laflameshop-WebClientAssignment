@@ -64,7 +64,7 @@ nav {
 
 .cart {
     position: absolute;
-    top: 36px;
+    padding-top: 13px;
 }
 
 .delivery {
