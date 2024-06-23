@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style_prod.css">
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="img/home-logo.png" alt="" width="250px" title="Home"></a>
+    
+        <div class="menu">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="button"><i class="fa fa-search"></i></button>
+            </div>
+            <a href="products.html" title="Produtos"><i class="fa-solid fa-store"></i></a>
+            <a href="car.html" class="cart" title="Carrinho"><img src="img/cart-icon.png" alt="" width="40px"></a>
+        </div>
+    </nav>
+
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt;
+        <span>Produtos</span>
+    </div>    
+
+    <div class="filterBar">
+        Os produtos estão organizados por
+        <div class="filter">destaque.</div>
+        Filtros: <button onclick="rearrangeAlphabetically()">Nome</button> <button
+            onclick="rearrangeByPrice()">Preço</button>
+    </div>
+
+    <ul class="list">
+        <li>
+            <section class="product0" data-nome="Travis Scott x Air Jordan 4 Cactus Jack" data-valor="3400.00">
+                <a href="javascript:openDialog('.product0');">
+                    <img src="img/j4prod.webp" alt=""><br>
+                    <span>Travis Scott x Air Jordan 4 Cactus Jack -</span>
+                    R$ 3400,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product1" data-nome="Dunk Low LX Blue Suede" data-valor="2100.00">
+                <a href="javascript:openDialog('.product1');">
+                    <img src="img/2620231452598.webp" alt=""><br>
+                    <span>Dunk Low LX Blue Suede - R$ 2100,00</span>
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product2" data-nome="Bad Bunny x adidas Response CL Triple Black" data-valor="3100.00">
+                <a href="javascript:openDialog('.product2');">
+                    <img src="img/2062023134013723.webp" alt=""><br>
+                    Bad Bunny x adidas Response CL Triple Black - R$ 3100,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product3" data-nome="Air Force 1 Mid Supreme NBA White" data-valor="3450.00">
+                <a href="javascript:openDialog('.product3');">
+                    <img src="img/203202115122483.webp" alt=""><br>
+                    Air Force 1 Mid Supreme NBA White -
+                    R$ 3450,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product4" data-nome="Travis Scott x Air Jordan 1 Low Retro SP Dark Mocha"
+                data-valor="3300.00">
+                <a href="javascript:openDialog('.product4');">
+                    <img src="img/16520232018971.webp" alt=""><br>
+                    Travis Scott x Air Jordan 1 Low Retro SP Dark Mocha -
+                    R$ 3300,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product5" data-nome="Yeezy 700 v1 Salt" data-valor="2400.00">
+                <a href="javascript:openDialog('.product5');">
+                    <img src="img/26202317103280.webp" alt=""><br>
+                    Yeezy 700 v1 Salt -
+                    R$ 2400,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product6" data-nome="Travis Scott x Nike Air Force 1 White" data-valor="3300.00">
+                <a href="javascript:openDialog('.product6');">
+                    <img src="img/912202014520509.webp" alt=""><br>
+                    Travis Scott x Nike Air Force 1 White -
+                    R$ 3300,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product7" data-nome="Yeezy Slide Onyx" data-valor="1050.00">
+                <a href="javascript:openDialog('.product7');">
+                    <img src="img/262023171623291.webp" alt=""><br>
+                    Yeezy Slide Onyx -
+                    R$ 1050,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product8" data-nome="Air Jordan 1 High Next Chapter" data-valor="3400.00">
+                <a href="javascript:openDialog('.product8');">
+                    <img src="img/2452023194744615.webp" alt=""><br>
+                    Air Jordan 1 High Next Chapter -
+                    R$ 3400,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product9" data-nome="550 Sea Salt True Red" data-valor="899.00">
+                <a href="javascript:openDialog('.product9');">
+                    <img src="img/722023125952410.webp" alt=""><br>
+                    550 Sea Salt True Red -
+                    R$ 899,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product10" data-nome="Yeezy Foam RNR MX Cinder" data-valor="900.00">
+                <a href="javascript:openDialog('.product10');">
+                    <img src="img/6625-4_adidas-yeezy-foam-rnr-mx-cinde.webp" alt=""><br>
+                    Yeezy Foam RNR MX Cinder -
+                    R$ 900,00
+                </a>
+            </section>
+        </li>
+        <li>
+            <section class="product11" data-nome="Air Jordan 4 Thunder" data-valor="2150.00">
+                <a href="javascript:openDialog('.product11');">
+                    <img src="img/146202313254168.webp" alt=""><br>
+                    Air Jordan 4 Thunder -
+                    R$ 2150,00
+                </a>
+            </section>
+        </li>
+    </ul>
+
+    <footer>
+        <div class="foot1">
+            &copy 2023 LaFlame. Todos os direitos reservados.<br>
+            R. Doutor Washington Subtil Chueire, 330 Jardim Carvalho - CEP 84017-220 Ponta Grossa - PR<br>
+            Tel: 0800 999 9999
+        </div>
+
+        <div class="foot2">
+            Redes Sociais<br><br>
+            <a href="/"><img src="img/insta-icon.png" alt="" height="28px"></a>
+            <a href="/"><img src="img/face-icon.png" alt="" height="28px"></a>
+            <a href="/"><img src="img/twitter-icon.png" alt="" height="28px"></a>
+        </div>
+    </footer>
+
+    <script src="js/prodscript.js"></script>
+</body>
+
+</html>

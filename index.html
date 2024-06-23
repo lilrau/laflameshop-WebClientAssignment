@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaFlame Gang</title>
+    <link rel="icon" type="image/png" href="img/laflame-icon.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="img/home-logo.png" alt="" width="250px" title="Home"></a>
+    
+        <div class="menu">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="button"><i class="fa fa-search"></i></button>
+            </div>
+            <a href="products.html" title="Produtos"><i class="fa-solid fa-store"></i></a>
+            <a href="car.html" class="cart" title="Carrinho"><img src="img/cart-icon.png" alt="" width="40px"></a>
+        </div>
+    </nav>
+
+    <div class="breadcrumbs">
+        <span>Home</span>
+    </div>
+    
+
+    <div class="delivery">
+        <div id="slide1">
+            <span><i class="fa-solid fa-shirt"></i><b>TROCA GRÁTIS</b> Confira os detalhes da nossa política de trocas e
+                devoluções.</span>
+        </div>
+
+        <div id="slide2">
+            <span><i class="fa-solid fa-plane"></i><b>FRETE GRÁTIS</b> Para todo o Brasil, exceto Norte e
+                Nordeste.</span>
+        </div>
+
+        <div id="slide3">
+            <span><i class="fa-solid fa-lightbulb"></i><b>NOVIDADE</b> Conheça os recém chegados <i>AirJordan x
+                    CactusJack</i>.</span>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="arrowDown">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <section class="anouncement">
+        <img src="img/CBJordanRetro4CactusJack.jpg" alt="" id="anounc1">
+        <img src="img/CBJordanRetro4CactusJack-2.jpg" alt="" id="anounc2">
+        <img src="img/CBJordanRetro4CactusJack-3.jpg" alt="" id="anounc3">
+        <img src="img/CBJordanRetro4CactusJack-4.jpg" alt="" id="anounc4">
+        <a class="prev" onclick="plusAnouncs(-1)">&#10094;</a>
+        <a class="next" onclick="plusAnouncs(1)">&#10095;</a>
+    </section>
+
+    <section class="featured">
+        <h2>Produtos em Destaque <i class="fa-solid fa-plane-departure"></i></h2>
+        <ul class="list">
+            <li>
+                <section class="product8" data-nome="Air Jordan 1 High Next Chapter" data-valor="3400.00">
+                    <a href="javascript:openDialog('.product8');">
+                        <img src="img/2452023194744615.webp" alt=""><br>
+                        Air Jordan 1 High Next Chapter -
+                        R$ 3400,00
+                    </a>
+                </section>
+            </li>
+            <li>
+                <section class="product4" data-nome="Travis Scott x Air Jordan 1 Low Retro SP Dark Mocha"
+                    data-valor="3300.00">
+                    <a href="javascript:openDialog('.product4');">
+                        <img src="img/16520232018971.webp" alt=""><br>
+                        Travis Scott x Air Jordan 1 Low Retro SP Dark Mocha -
+                        R$ 3300,00
+                    </a>
+                </section>
+            </li>
+            <li>
+                <section class="product3" data-nome="Air Force 1 Mid Supreme NBA White" data-valor="3450.00">
+                    <a href="javascript:openDialog('.product3');">
+                        <img src="img/203202115122483.webp" alt=""><br>
+                        Air Force 1 Mid Supreme NBA White -
+                        R$ 3450,00
+                    </a>
+                </section>
+    </section>
+
+    <input type="button" value="Ver Produtos" id="ftprodbtn" class="ftprodbtn" onclick="location.href='products.html'">
+
+    <section class="register" id="register">
+        <h2>ISSO É<br><span>LAFLAME</span></h2>
+        <span>Entre para o clube e aproveite tudo que nossa gang preparou para você!</span>
+
+        <div class="form">
+            <div class="entry">
+                <label for="name">Seu nome:</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="entry">
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="entry">
+                <label for="cpf">CPF:</label><br>
+                <input type="number" name="cpf" id="cpf">
+            </div>
+
+            <div class="entry">
+                <label for="cep">CEP:</label><br>
+                <input type="number" name="cep" id="cep">
+            </div>
+
+            <div class="entry">
+                <label for="adress">Rua/Avenida:</label><br>
+                <input type="text" name="adress" id="adress">
+            </div>
+
+            <div class="entry">
+                <label for="neighborhood">Bairro:</label><br>
+                <input type="text" name="neighborhood" id="neighborhood">
+            </div>
+
+            <div class="entry">
+                <label for="city">Cidade:</label><br>
+                <input type="text" name="city" id="city">
+            </div>
+
+            <div class="entry">
+                <label for="state">Estado (UF):</label><br>
+                <input type="text" name="state" id="state">
+            </div>
+
+            <div class="entry">
+                <label for="phone">Celular:</label><br>
+                <input type="tel" name="phone" id="phone">
+            </div>
+
+            <div class="entry">
+                <label for="date">Data de Nascimento:</label><br>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="entry">
+                <label for="password">Senha:</label><br>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="acc-btn">
+                <label for="password"><i class="fa-solid fa-fire"></i> Junte-se a gang</label><br>
+                <input type="button" value="Criar conta" name="accbtn" id="accbtn" class="accbtn">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <form action="" class="emailContact">
+            <h2>Contato</h2>
+            <span>Deixe sua mensagem e entraremos em contato o mais breve possível.</span>
+
+            <div class="entry">
+                <label for="name">Seu nome:</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="entry">
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email2">
+            </div>
+
+            <div class="entry">
+                <label for="subject">Assunto:</label><br>
+                <input type="tel" name="subject" id="subject">
+            </div>
+
+            <div class="entry">
+                <label for="message">Mensagem:</label><br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="acc-btn">
+                <label for=""><i class="fa-solid fa-envelope"></i></label><br>
+                <input type="button" value="Enviar" name="sendbtn" id="sendbtn" class="accbtn">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="foot1">
+            &copy 2023 LaFlame. Todos os direitos reservados.<br>
+            R. Doutor Washington Subtil Chueire, 330 Jardim Carvalho - CEP 84017-220 Ponta Grossa - PR<br>
+            Tel: 0800 999 9999
+        </div>
+
+        <div class="foot2">
+            Redes Sociais<br><br>
+            <a href="/"><img src="img/insta-icon.png" alt="" height="28px"></a>
+            <a href="/"><img src="img/face-icon.png" alt="" height="28px"></a>
+            <a href="/"><img src="img/twitter-icon.png" alt="" height="28px"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contactscript.js"></script>
+    <script src="js/cepsearcher.js"></script>
+    <script src="js/searchprod.js"></script>
+</body>
+
+</html>

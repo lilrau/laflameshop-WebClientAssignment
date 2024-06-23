@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style_cart.css">
+</head>
+
+<body onload="visualCarrinho()">
+
+  <main>
+    <nav>
+      <a class="logo" href="index.html"><img src="img/home-logo.png" alt="" width="250px" title="Home"></a>
+  
+      <div class="menu">
+          <div class="search-bar">
+              <input type="text" placeholder="Pesquisar...">
+              <button type="button"><i class="fa fa-search"></i></button>
+          </div>
+          <a href="products.html" title="Produtos"><i class="fa-solid fa-store"></i></a>
+          <a href="car.html" class="cart" title="Carrinho"><img src="img/cart-icon.png" alt="" width="40px"></a>
+      </div>
+  </nav>
+
+  <div class="breadcrumbs">
+      <a href="index.html">Home</a> &gt;
+      <span>Carrinho</span>
+  </div>
+  
+
+    <h1>Carrinho de Compras</h1>
+
+    <div id="cart-container" class="cart-container"></div>
+
+    <h4 class="finalPrice" id="finalPrice">Preço Total: R$0.00</h4>
+
+    <section class="check-out">
+      <div id="apply-coupon">
+        Possui um cupom de desconto? Adicionar:
+        <input type="text" id="coupon">
+        <input type="button" value="Adicionar cupom" onclick="aplicarDesconto()">
+      </div>
+
+      <div class="the-end">
+        <input type="button" value="FINALIZAR COMPRA" onclick="aplicarDesconto()"> <i class="fa-solid fa-fire"></i>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot1">
+      &copy 2023 LaFlame. Todos os direitos reservados.<br>
+      R. Doutor Washington Subtil Chueire, 330 Jardim Carvalho - CEP 84017-220 Ponta Grossa - PR<br>
+      Tel: 0800 999 9999
+    </div>
+
+    <div class="foot2">
+      Redes Sociais<br><br>
+      <a href="/"><img src="img/insta-icon.png" alt="" height="28px"></a>
+      <a href="/"><img src="img/face-icon.png" alt="" height="28px"></a>
+      <a href="/"><img src="img/twitter-icon.png" alt="" height="28px"></a>
+    </div>
+  </footer>
+
+  <script src="js/carscript.js"></script>
+</body>
+
+</html>
